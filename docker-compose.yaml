@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: ${CBR_DB}
+      POSTGRES_USER: ${CBR_DB_USER}
+      POSTGRES_PASSWORD: ${CBR_DB_PASSWORD}
+    ports:
+      - "${CBR_DB_PORT}:5432"

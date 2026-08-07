@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: payment-checker-service
+  datasource:
+    url: jdbc:postgresql://localhost:${CBR_DB_PORT}:5432}/cbr_mock
+    username: cbr
+    password: cbr
